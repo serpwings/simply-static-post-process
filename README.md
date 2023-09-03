@@ -1,9 +1,14 @@
 # Simply Static Post Process
 
-![pyrobotstx feature image](docs/img/simply-static-netlify-deploy-workflow.png)
+> :warning: This approach is only supported for Simply Static versions upto 2.3.2. This will not work with Version 3 and upwards. Please check [static-wordpress](https://github.com/serpwings/static-wordpress) repositroy which works with latest version. 
 
 
 A Python Library to prepare and deploy a static version of a WordPress Installation on Netlify (Static Hosting Service Provider). 
+
+
+![pyrobotstx feature image](docs/img/simply-static-netlify-deploy-workflow.png)
+
+
 
 ## How to Use simply-static-post-process?
 Please check our detailed tutorial (video/text) on <a href="https://www.seowings.org/simply-static-tutorial/" target="_blank">Simply Static Post Process Tutorial</a> to understand how it works. This package has a live documentation file on <a href="https://simply-static.netlify.app" target="_blank">documentation link</a>.
