@@ -1,6 +1,6 @@
 # Simply Static Post Process
 
-> :warning: This approach is only supported for Simply Static versions upto 2.3.2. This will not work with Version 3 and upwards. Please check [static-wordpress](https://github.com/serpwings/static-wordpress) repositroy which works with latest version. 
+> :warning: This approach is only supported for Simply Static versions upto 2.3.2. This will not work with Version 3 and upwards. Please check [static-wordpress](https://github.com/serpwings/static-wordpress) repositroy which works with latest version. Alternatively, you can download [Simply Static Version 2.3.2 from WordPress.org Plugin repoisitory](https://downloads.wordpress.org/plugin/simply-static.2.3.2.zip)
 
 
 A Python Library to prepare and deploy a static version of a WordPress Installation on Netlify (Static Hosting Service Provider). 
