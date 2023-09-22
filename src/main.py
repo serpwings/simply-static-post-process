@@ -148,24 +148,10 @@ class SimplyStaticPostProcess:
             self.robots_txt_page,
             "index.html",
         )
-
-        if robots_path.exists():
-            with codecs.open(robots_path, "r", "utf-8") as f:
-                robots_txt_contents = f.read()
-                soup = BeautifulSoup(robots_txt_contents, "lxml")
-                robots_table = soup.find_all("table")[0]
-
-                with open(f"{self.output_folder}/robots.txt", "w") as f:
-                    for row in robots_table.tbody.find_all("tr"):
-                        f.write("".join([cell.text.strip("\r") for cell in row("td")]))
-                        f.write("\n")
-
-                shutil.rmtree(Path(self.output_folder, self.config["pages"]["robots"]))
-        else:
-            with open(f"{self.output_folder}/robots.txt", "w") as f:
-                f.write("User-agent: * \n")
-                f.write("Disallow: /wp-admin/ \n")
-                f.write("Allow: /wp-admin/admin-ajax.php \n")
+        with open(f"{self.output_folder}/robots.txt", "w") as f:
+            f.write("User-agent: * \n")
+            f.write("Disallow: /wp-admin/ \n")
+            f.write("Allow: /wp-admin/admin-ajax.php \n")
 
         helpers.log_to_console("INFO", "Created robots.txt file")
 
